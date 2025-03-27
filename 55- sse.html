@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+    <body> 
+        <h1>SSE</h1> 
+        <p>SSE is used to send data from a server to a client.</p> 
+        <p>For example, you can use SSE to send data from a server to a client.</p> 
+        <p>Here is an example:</p> 
+        <script> 
+            var source = new EventSource("demo_sse.php"); 
+            source.onmessage = function(event) { 
+                document.getElementById("result").innerHTML += event.data + "<br>"; 
+            }; 
+        </script> 
+        <div id="result"></div> 
+    </body>
+</html>
